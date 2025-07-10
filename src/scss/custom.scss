@@ -1,0 +1,424 @@
+@import './variables';
+@import 'vuetify/styles/main.sass';
+@import './override';
+@import './layout/text';
+@import './layout/reboot';
+@import './layout/container';
+@import './layout/sidebar';
+@import './layout/rtl';
+@import './layout/topbar';
+@import './layout/horizontal';
+@import './layout/dark';
+@import './layout/customizer';
+
+@import './components/VBreadcrumb';
+@import './components/VAlert';
+@import './components/VButtons';
+@import './components/VCard';
+@import './components/VCarousel';
+@import './components/VField';
+@import './components/VList';
+@import './components/VInput';
+@import './components/VNavigationDrawer';
+@import './components/VShadow';
+@import './components/VSwitch';
+@import './components/VSelectionControl';
+@import './components/VTextField';
+@import './components/VTextarea';
+@import './components/VTabs';
+@import './components/VTable';
+@import './components/VExpansionpanel';
+
+/*Landing page css*/
+@import 'landingpage/header';
+@import 'landingpage/general';
+
+@import './pages/datatable';
+@import './pages/dashboards';
+@import './pages/editor';
+@import './pages/authentication';
+@import './pages/apps';
+
+@import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css';
+
+.v-container.v-container--fluid .maxWidth {
+    max-width: 1600px;
+}
+
+
+// .sailFont {
+//     font-family: "Playfair Display", serif!important;
+//     font-optical-sizing: auto;
+//     font-weight: 400;
+//     font-style: normal!important;
+// }
+// .sailFont.text-h1,.sailFont.text-h2,.sailFont.text-h3,.sailFont.text-h4,.sailFont.text-h5,.sailFont.text-h6,
+// h1.sailFont,h2.sailFont,h3.sailFont,h4.sailFont,h5.sailFont,h6.sailFont {
+//     font-weight: 600!important;
+// }
+.calendarMainEvent .fc-scrollgrid-sync-table tbody td {
+    cursor: pointer;
+}
+
+.calendarMainEvent .fc-scrollgrid-sync-table td.fc-day.active {
+    background-color: #dffeff;
+}
+
+.calendarMainEvent.fc .fc-toolbar-title {
+    font-size: 22px;
+}
+
+.calendarMainEvent .fc-button-group>button span.fc-icon {
+    line-height: 1;
+    height: auto;
+}
+
+.calendarMainEvent.fc .fc-button-group>.fc-button-primary {
+    background-color: #b4801c;
+    border-color: #b4801c;
+}
+
+.calendarMainEvent.fc button.fc-today-button.fc-button-primary {
+    background-color: #252525;
+    border-color: #252525;
+}
+
+.calendarMainEvent.fc td.fc-day.fc-day-other {
+    opacity: 0.5;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bgImageAuth {
+    position: relative;
+    z-index: 9;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url(../assets/images/wedding/couples.jfif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(6px);
+    }
+}
+
+.imageSizeAccount {
+    width: 100%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+    }
+}
+
+.countNumber {
+    font-size: 55px;
+    line-height: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: inline-block;
+    opacity: 0.1;
+    color: #fff;
+    font-weight: 900;
+}
+
+.section-title-img {
+    position: relative;
+}
+
+.section-title-img::before,
+.section-title-img::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 100px;
+    height: 1px;
+    background: #86a0b6;
+}
+
+.section-title-img::before {
+    left: calc(50% - 120px);
+    transform: translateX(-50%);
+}
+
+.section-title-img::after {
+    right: calc(50% - 120px);
+    transform: translateX(50%);
+}
+
+.letterSpacing {
+    letter-spacing: 0.5px;
+}
+
+.welcome-text {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.btn-ring:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: ring 1.2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.line-height-1-2 {
+    line-height: 1.2;
+}
+
+.line-height-1-3 {
+    line-height: 1.3;
+}
+
+.line-height-1-4 {
+    line-height: 1.4;
+}
+
+.line-height-1-5 {
+    line-height: 1.5;
+}
+
+.line-height-1-6 {
+    line-height: 1.6;
+}
+
+.listStyleStep {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 20px 0;
+    width: 100%;
+
+    >li {
+        justify-content: space-between;
+        display: flex;
+        flex-flow: row wrap;
+
+        span {
+            display: flex;
+            width: 38px;
+            height: 38px;
+            background-color: #fff;
+            border: 3px solid rgb(var(--v-theme-primary));
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: rgb(var(--v-theme-primary));
+            font-weight: 600;
+            // cursor: pointer;
+        }
+
+        &.active,
+        &.done {
+            span {
+                background-color: rgb(var(--v-theme-secondary));
+                color: #fff;
+                border-color: rgb(var(--v-theme-secondary));
+            }
+        }
+    }
+}
+
+.labelStyleImage.h-100 {
+    height: 100%;
+    min-height: 130px;
+}
+
+.labelStyleImage {
+    background-color: #dde8f1;
+    height: 130px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+
+    >input {
+        opacity: 0;
+        display: none;
+    }
+
+    .iconTitleUpld {
+        font-size: 24px;
+    }
+}
+
+.image-holder img {
+    max-width: 100%;
+}
+
+.mainImageRow {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.image-holder {
+    width: calc(20% - 8px);
+    position: relative;
+    border: 1px solid rgb(var(--v-theme-primary));
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+.btnTrash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #d31515;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageGroupMain {
+    position: relative;
+    display: inline-block;
+}
+
+.labelStImgPro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.v-text-field input::placeholder {
+    text-align: left;
+    font-size: 15px;
+}
+
+.v-text-field input::-webkit-input-placeholder {
+    text-align: left;
+    font-size: 15px;
+}
+
+.businessGroup {
+    .imageSizeMain {
+        img {
+            object-fit: contain;
+            width: 90%;
+            height: auto;
+        }
+    }
+}
+
+.imageSizeMain {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    background-color: #e1e7ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+img {}
+
+.mainInnerColAl {
+    position: relative;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:959px) {
+    .cardStyleAccount {
+        margin-top: -40px;
+        background-color: #fff;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .imageSizeAccount {
+        height: 300px;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.li.carousel__slide {
+    background-image: url(../assets/images/wedding/decoration.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.scrollnavbar {
+    height: calc(100vh - 240px);
+}

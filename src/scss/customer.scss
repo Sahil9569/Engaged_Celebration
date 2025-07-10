@@ -1,0 +1,507 @@
+@import './variables';
+@import 'vuetify/styles/main.sass';
+@import './override';
+@import './layout/text';
+@import './layout/reboot';
+@import './layout/container';
+@import './layout/sidebar';
+@import './layout/rtl';
+@import './layout/topbar';
+@import './layout/horizontal';
+@import './layout/dark';
+@import './layout/customizer';
+
+@import './components/VBreadcrumb';
+@import './components/VAlert';
+@import './components/VButtons';
+@import './components/VCard';
+@import './components/VCarousel';
+@import './components/VField';
+@import './components/VList';
+@import './components/VInput';
+@import './components/VNavigationDrawer';
+@import './components/VShadow';
+@import './components/VSwitch';
+@import './components/VSelectionControl';
+@import './components/VTextField';
+@import './components/VTextarea';
+@import './components/VTabs';
+@import './components/VTable';
+@import './components/VExpansionpanel';
+
+/*Landing page css*/
+@import 'landingpage/header';
+@import 'landingpage/general';
+
+@import './pages/datatable';
+@import './pages/dashboards';
+@import './pages/editor';
+@import './pages/authentication';
+@import './pages/apps';
+
+@import 'vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css';
+
+
+
+// .logo-img-setting {
+//     width: 400px;
+// }
+
+// .background-card {
+//     background-image: url(../../../src/assets/images/customer/bride-groom.jpg);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+
+.fc-h-event {
+    background-color: #dae2ea;
+    border: 1px solid #dae2ea;
+    display: block;
+
+    .fc-event-main {
+        color: #000;
+    }
+}
+
+.fc .fc-more-popover .fc-popover-body {
+    min-width: 220px;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.packLogoSize .logo a img {
+    width: 300px;
+}
+
+.loginLogoSize .logo a img {
+    width: 300px;
+}
+
+img.logo-img-setting {
+    width: 220px;
+}
+
+
+.vendor-card-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+}
+
+.vendor-card-background:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(201deg, transparent 37%, #000000fc 80%);
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+}
+
+
+.badge-service {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 9;
+}
+
+.wishlist-icon {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    z-index: 1;
+}
+
+
+
+
+
+.alertWrap {
+    z-index: 9999999;
+    position: fixed;
+    right: 22px;
+    top: 95px;
+}
+
+.viewServiceBtn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.38s ease-in-out 0s all;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+/* width */
+.v-table__wrapper::-webkit-scrollbar,
+.scroll-style::-webkit-scrollbar,
+.contentHeight::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+
+/* Track */
+.v-table__wrapper::-webkit-scrollbar-track,
+.scroll-style::-webkit-scrollbar-track,
+.contentHeight::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.v-table__wrapper::-webkit-scrollbar-thumb,
+.scroll-style::-webkit-scrollbar-thumb,
+.contentHeight::-webkit-scrollbar-thumb {
+    background: #b9c0c5;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.v-table__wrapper::-webkit-scrollbar-thumb:hover,
+.scroll-style::-webkit-scrollbar-thumb:hover,
+.contentHeight::-webkit-scrollbar-thumb:hover {
+    background: #737475;
+}
+
+.text-nowrap th,
+.text-nowrap td {
+    white-space: nowrap;
+}
+
+
+
+// Editor Code Start here 
+.custom-tiptap-style {
+    height: 200px;
+    overflow-y: auto;
+}
+
+
+
+// Pagination code start here
+
+.v-pagination .v-pagination__list {
+    justify-content: flex-end;
+    padding: 10px 0px;
+}
+
+.v-pagination .v-pagination__list li button {
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #b4801c;
+    border-radius: 2px !important;
+    width: 40px;
+    height: 40px;
+}
+
+.v-pagination__item--is-active .v-btn__overlay {
+    opacity: 0.11;
+}
+
+.v-pagination__item .v-btn__content {
+    color: #b4801c;
+}
+
+
+.bg-dark {
+    background: #171718;
+}
+
+
+.vc-weekday,
+.vc-day {
+    padding: 15px;
+}
+
+// .vc-weekday-7,
+// .weekday-7 {
+//     border-right: 1px solid #ccc;
+// }
+
+// .vc-week:last-child .vc-day {
+//     border-bottom: 1px solid #ccc;
+// }
+
+.vc-header {
+    margin-bottom: 10px;
+}
+
+.calendermain-style .vc-bg-primary {
+    --vc-highlight-light-content-color: rgb(var(--v-theme-secondary)) !important;
+    --vc-highlight-light-bg: rgb(var(--v-theme-lightsecondary)) !important;
+}
+
+.calendermain-style .vc-bg-success {
+    --vc-highlight-light-content-color: rgb(47 118 4) !important;
+    --vc-highlight-light-bg: rgb(var(--v-theme-lightsuccess)) !important;
+}
+
+
+
+.bookingModalStyle .vc-light.vc-attr,
+.bookingModalStyle .vc-light .vc-attr {
+    --vc-highlight-light-bg: rgb(var(--v-theme-lightsecondary)) !important;
+    --vc-highlight-solid-content-color: #fff;
+    --vc-highlight-solid-bg: rgb(var(--v-theme-secondary)) !important;
+}
+
+
+.text-Darklight {
+    color: #647588;
+}
+
+
+.contentHeight {
+    height: 295px;
+    overflow-y: auto;
+}
+
+.content-style p {
+    font-weight: 500;
+}
+
+.content-style ul {
+    margin-left: 20px !important;
+}
+
+.content-style h1 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.content-style h2 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.innerAvatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.customerImg {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: flex;
+}
+
+.main-img-user {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.main-header-user {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+
+
+
+// Loader Code start here 
+
+.loader-17 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #b4801c;
+    border-right: 3px solid transparent;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 2s linear infinite;
+    position: fixed;
+}
+
+.loader-17:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-bottom: 3px solid #f2cf84;
+    border-left: 3px solid transparent;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.loader:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 80%);
+    backdrop-filter: blur(10px);
+}
+
+.loaderinner {
+    position: relative;
+}
+
+.loaderinner img {
+    width: 50px;
+    position: relative;
+    top: 2px;
+    animation: bounce 2s linear infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+// Loader Code end here 
+
+.v-overlay__scrim {
+    pointer-events: auto;
+    background: rgb(0 0 0 / 43%) !important;
+    border-radius: inherit;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    opacity: 1;
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(3px);
+}
+
+.styleforEditorcode ul,
+.styleforEditorcode ol {
+    list-style: none;
+    margin: 10px 0px 0px 20px;
+}
+
+.styleforEditorcode ul li,
+.styleforEditorcode ol li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.styleforEditorcode ul li p,
+.styleforEditorcode ol li p {
+    position: relative;
+}
+
+.styleforEditorcode ul li p::before,
+.styleforEditorcode ol li p::before {
+    content: "";
+    background: url(/src/assets/images/wedding/checkIcon.svg);
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -24px;
+    top: 2px;
+}
+
+
+.editorcodestyle h1,
+.editorcodestyle h2,
+.editorcodestyle h3,
+.editorcodestyle h4,
+.editorcodestyle h5,
+.editorcodestyle h6 {
+    margin-top: 10px;
+}
+
+.setUserImg img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.maxwidthSet {
+    width: 400px;
+    text-wrap: wrap;
+}
+
+// media queries start here
+
+
+
+@media screen and (min-width: 1025px) {
+    .viewServiceBtn {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        transition: 0.38s ease-in-out 0s all;
+        opacity: 0;
+    }
+
+    .vendor-card-hover:hover .viewServiceBtn {
+        opacity: 1;
+        bottom: 10px;
+    }
+
+
+}
+
+.lp-header:not(.noshadow .lp-header) {
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 14%);
+}
+
+.v-field--disabled {
+    opacity: 0.8;
+    pointer-events: none;
+}
